@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExtreMiel</title>
+    <style>
+        body {
+            font-family: 'Cursive', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f1b2;
+        }
+
+        header {
+            background-color: #F0E68C;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .nav-links a:hover {
+            background-color: #ecdc7e;
+        }
+
+        .search input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .icons a {
+            margin-left: 15px;
+            font-size: 20px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .inicio, .tablacontacto, .formularioContacto {
+            text-align: center;
+            padding: 30px;
+            color: #5c4f47;
+        }
+
+        .tablacontacto table {
+            width: 60%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: #f8f1b2;
+        }
+
+        .tablacontacto th, .tablacontacto td {
+            border: 1px solid #5c4f47;
+            padding: 10px;
+        }
+
+        .formularioContacto input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .enviar {
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #F0E68C;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+        }
+
+        #logo {
+            width: 50px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/img/image.png" alt="Logo de la empresa">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="miel.html">Miel</a></li>
+                <li><a href= "regalos.html">Regalos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="blog.html">Blog</a></li>
+
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Buscar productos...">
+                <button>🔍</button>
+            </div>
+            <div class="icons">
+                <a href="carrito.html">🛒</a>
+                <a href="iniciarSesion.html">👤</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="inicio">
+            <h1 style="color: black;">Contacta con nosotros sin compromiso.</h1>
+            <h2 style="color: black">Y resuelve todas tus dudas para que disfrutes de un gran viaje.</h2>
+        </div>
+        <div class="tablacontacto">
+            <table>
+                <tr>
+                    <th>Calle</th>
+                    <td>Avenida Alemania, 24 Cáceres</td>
+                </tr>
+                <tr>
+                    <th>Teléfono</th>
+                    <td>924-40-34-56 / 623-98-75-34</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>info@extremiel.com</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="formularioContacto">
+            <h3 style="color: black;">Ingrese sus datos y en breves uno de nuestros agentes se pondrá en contacto con usted.</h3>
+            <form action="#" method="post">
+                <label for="nombre">Indica su nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Indica su apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="telefono">Indica su número de teléfono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+
+                <label for="email">Indica su email:</label>
+                <input type="email" id="email" name="email" required>
+            </form>
+            <div class="enviar">
+                <button type="submit">Enviar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Contacto: info@extremiel.com | Teléfono: 924-40-34-56 / 623-98-75-34</p>
+            <p>Dirección: Avenida Alemania, 24 Cáceres</p>
+        </div>
+        <img id="logo" src="/img/image.png" alt="Logo de la empresa">
+    </footer>
+</body>
+</html>
+

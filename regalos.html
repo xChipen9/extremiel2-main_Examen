@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExtreMiel</title>
+    <style>
+        body {
+            font-family: 'Cursive', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f1b2;
+            transition: background-color 0.5s ease; 
+        }
+
+        h2, h3 {
+            text-align: center;
+        }
+
+        header {
+            background-color: #F0E68C;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 50px;
+            height: auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 14px 16px;
+            transition: background-color 0.3s ease; 
+        }
+
+        .nav-links a:hover {
+            background-color: #ecdc7ee5;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+
+        .icons a {
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .icons a:hover {
+            color: #000;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .contenedor1, .contenedor2 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contenedor1 img, .contenedor2 img {
+            width: 45%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .contenedor2 {
+            flex-direction: row-reverse;
+        }
+
+        .cursos {
+            text-align: center;
+            padding: 30px;
+            color: #5c4f47;
+        }
+
+        .mielRomero, .mielEspliego, .mielMilFlores, .mielTomillo {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            border: 1px solid #5c4f47;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .mielRomero:hover, .mielEspliego:hover, .mielMilFlores:hover, .mielTomillo:hover {
+            transform: scale(1.05); 
+        }
+
+        .mielRomero-img, .mielEspliego-img, .mielMilFlores-img, .mielTomillo-img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #5c4f47;
+            cursor: pointer;
+        }
+
+        .precio {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #F0E68C;
+            color: black;
+            text-align: left;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.5s ease; 
+        }
+
+        #logo {
+            width: 50px;
+            height: auto;
+            margin-right: 20px;
+            transition: transform 0.3s ease; 
+        }
+
+        #logo:hover {
+            transform: scale(1.1); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/img/image.png" alt="Logo de la empresa">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html.html">Inicio</a></li>
+                <li><a href="miel.html">Miel</a></li>
+                <li><a href="regalos.html">Regalos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="blog.html">Blog</a></li>
+
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Buscar productos...">
+                <button>🔍</button>
+            </div>
+            <div class="icons">
+                <a href="carrito.html">🛒</a>
+                <a href="iniciarSesion.html">👤</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Nuestros Packs de Regalo</h2>
+        <h3>Regala nuestros packs con la Mejor miel Extremeña.</h3>
+        <h3>¡Y haz disfrutar como lo haces tú!</h3>
+        
+        <div class="cursos">
+
+            <div class="mielRomero">
+                <h4>Pack Cesta Azahar</h4>
+                <a href="miel.html">
+                    <img src="/img/pack1.png" alt="mielRomero" class="mielRomero-img">
+                </a>
+                <p class="precio">Desde 12,95€</p>
+            </div>
+
+            
+
+            <div class="mielMilFlores">
+                <h4>Pack Cesta Eucalipto</h4>
+                <a href="miel.html">
+                    <img src="/img/pack2.png" alt="mielMilFlores" class="mielMilFLores-img">
+                </a>
+                <p class="precio">Desde 49,95€</p>
+            </div>
+
+            <div class="mielTomillo">
+                <h4>Pack Cesta Espliego</h4>
+                <a href="miel.html">
+                    <img src="/img/pack3.png" alt="mielTomillo" class="mielTomillo-img">
+                </a>
+                <p class="precio">Desde 14,95€</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Contacto: info@extremiel.com | Teléfono: 924-40-34-56 / 623-98-75-34</p>
+            <p>Dirección: Avenida Alemania, 24 Cáceres</p>
+        </div>
+        <img id="logo" src="/img/image.png" alt="Logo de Mi Empresa">
+    </footer>
+</body>
+</html>
